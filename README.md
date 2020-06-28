@@ -1,7 +1,42 @@
 # keyframe
 keyframe
 
-```Javascript
+```html
+<style type="text/css">
+    @-webkit-keyframes slideInDown {
+        from {
+          -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+          visibility: visible;
+        }
+      
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      
+      @keyframes slideInDown {
+        from {
+          -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+          visibility: visible;
+        }
+      
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      
+      .slideInDown {
+        -webkit-animation-name: slideInDown;
+        animation-name: slideInDown;
+      }
+</style>
+<script src="https://cdn.staticfile.org/jquery/1.12.4/jquery.js"></script>
+<script src="keyframe.js"></script>
+<script>
     //logo动画
     var keyframeArr=[
         {//page
@@ -80,4 +115,4 @@ keyframe
         keyframejs.deletePageFrame(0);
         keyframejs.setupPageFrame(0);
     },2000);
-
+    </keyframe>

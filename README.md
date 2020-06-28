@@ -1,8 +1,7 @@
 # keyframe
 keyframe
 
-[js]
-
+```Javascript
     //logo动画
     var keyframeArr=[
         {//page
